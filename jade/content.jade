@@ -1,0 +1,159 @@
+#page-content-wrapper.content
+  form(action="http://localhost:3000/sample", class='sample-title', method='POST')
+    .container-fluid
+      .row
+        include tools.jade
+      .row
+        #main-sector.col-lg-7.no-padding
+          .form-group
+            .input-group
+              span.input-group-addon.glyphicon.glyphicon-pencil
+              input(
+                type='text'
+                name='title'
+                id='title'
+                value=data.title
+              )
+            .input-group
+              input(
+                type='text'
+                name='url'
+                id='url'
+                value=data.url
+              )
+              span.input-group-addon.glyphicon.glyphicon-pencil
+            .input-group
+              label.small Description
+              input(
+                type='text'
+                name='meta-description'
+                id='meta-description'
+                value=data.meta.description
+              )
+              span.input-group-addon.glyphicon.glyphicon-pencil
+            .input-group
+                label.small Keys
+                input(
+                  type='text'
+                  name='meta-keys'
+                  id='meta-keys'
+                  value=data.meta.keys
+                )
+                span.input-group-addon.glyphicon.glyphicon-pencil
+            .input-group
+              #toolbar
+                select.ql-size(title='Size')
+                  option(value='10px') Small
+                  option(value='13px', selected='') Normal
+                  option(value='18px') Large
+                  option(value='32px') Huge
+                select.ql-color(title='Text Color')
+                  option(value='rgb(255, 255, 255)') White
+                  option(value='rgb(0, 0, 0)', selected='') Black
+                  option(value='rgb(255, 0, 0)') Red
+                  option(value='rgb(0, 0, 255)') Blue
+                  option(value='rgb(0, 255, 0)') Lime
+                  option(value='rgb(0, 128, 128)') Teal
+                  option(value='rgb(255, 0, 255)') Magenta
+                  option(value='rgb(255, 255, 0)') Yellow
+                select.ql-align(title='Text Alignment')
+                  option(value='left', selected='') Left
+                  option(value='center') Center
+                  option(value='right') Right
+                  option(value='justify') Justify
+                button.ql-format-button.ql-bold(title='Bold') Bold
+                button.ql-format-button.ql-italic(title='Italic') Italic
+                button.ql-format-button.ql-underline(title='Underline') Under
+                button.ql-format-button.ql-strike(title='Strikethrough') Strike
+                button.ql-format-button.ql-link(title='Link') Link
+                button.ql-format-button.ql-image(title='Image') Image
+                button.ql-format-button.ql-bullet(title='Bullet') Bullet
+                button.ql-format-button.ql-list(title='List') List
+              #content(rows=10, cols=80)= data.content
+              span.input-group-addon.glyphicon.glyphicon-pencil
+        #additional-sector.col-lg-5
+          .row.form-group
+            .col-lg-6.no-padding
+              .input-group
+                label.small Published
+                input(
+                  type= 'text',
+                  name= 'published',
+                  id= 'published',
+                  value=data.date.published
+                )
+            .col-lg-6.no-padding
+              .input-group
+                label.small Updated
+                input(
+                  type= 'text'
+                  name= 'updated'
+                  id= 'updated'
+                  value=data.date.updated
+                )
+          .row
+              .input-group
+                label.small Tags
+                input(
+                  type='text'
+                  name='tags'
+                  id='tags'
+                  value=data.tags
+                )
+                span.input-group-addon.glyphicon.glyphicon-pencil
+          .row
+            .col-lg-6.no-padding
+              .input-group
+                label Owner
+                img(src=data.owner.img, width=20, height=20)
+                input(
+                  type= 'text'
+                  name= 'owner'
+                  id= 'owner'
+                  value=data.owner.name
+                )
+              .input-group
+                label Template
+                select#template
+                  option Default
+                  option Sample
+              .input-group
+                label Indexation
+                input#indexation(type='checkbox')
+              .input-group
+                label Visible
+                input#visible(type='checkbox')
+              .input-group
+                label Hide from navigation
+                input#hide-navigation(type='checkbox', value=data.hide.navigation)
+              .input-group
+                label Hide from sitemap
+                input#hide-sitemap(type='checkbox', value=data.hide.sitemap)
+            .col-lg-6.no-padding
+              .input-group
+                label Access groups
+                input(
+                  type='search'
+                  name='access-groups'
+                  id='access-groups'
+                  placeholder= 'search group'
+                )
+                ul.access-groups
+                each group, i in data.access.groups
+                  li
+                    a(href="#{group.url}") #{group.name}
+                span.input-group-addon.glyphicon.glyphicon-pencil
+              .input-group
+                label Access users
+                input(
+                  type='search'
+                  name='access-users'
+                  id='access-users'
+                  placeholder= 'search user'
+                )
+                ul.access-users
+                each user, i in data.access.users
+                  li
+                    a(href="#{user.url}") #{user.name}
+                span.input-group-addon.glyphicon.glyphicon-pencil
+              button.btn.btn-success.submit(type='submit') Сохранить

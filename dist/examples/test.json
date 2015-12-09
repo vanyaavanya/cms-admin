@@ -1,0 +1,52 @@
+{
+	"name": "Main page",
+	"children": [{
+		"name": "Catalog",
+		"children": [{
+			"name": "Samples",
+			"children": [{
+				"name": "Sample_1",
+				"size": 10
+			}, {
+				"name": "Sample_2",
+				"size": 20
+			}, {
+				"name": "Sample_3",
+				"size": 30
+			}, {
+				"name": "Sample_4",
+				"size": 40
+			}]
+		}, {
+			"name": "Statics",
+			"children": [{
+				"name": "Static catalog page",
+				"size": 3534
+			}, {
+				"name": "Static contacts page",
+				"size": 5731
+			}, {
+				"name": "Static about page",
+				"size": 7840
+			}, {
+				"name": "Static user page",
+				"size": 5914
+			}, {
+				"name": "Static order page",
+				"size": 3416
+			}]
+		}, {
+			"name": "Admin",
+			"children": [{
+				"name": "Statics",
+				"size": 7074
+			}, {
+				"name": "Posts",
+				"size": 7074
+			}, {
+				"name": "Users",
+				"size": 7074
+			}]
+		}]
+	}]
+}

@@ -1,0 +1,15 @@
+#sidebar-wrapper
+    ul.sidebar-nav
+      li.sidebar-brand
+        a(href='#')
+          | Start Project
+      each item, i in page.menu.items
+        li
+          a(href="#{item.url}") #{item.name}
+    ul.sidebar-nav.short
+      li.sidebar-brand
+        a(href='#')
+          | S
+      each item, i in page.menu.items
+        li
+          a(href="#{item.url}") #{item.name[0]}

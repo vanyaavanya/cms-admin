@@ -1,0 +1,49 @@
+<div id="page-content-wrapper" class="content"><form action="http://localhost:3000/sample" method="POST" class="sample-title"><div class="container-fluid"><div class="row"><div id="tools-wrapper"><button type="button" data-toggle="collapse" data-target="#bs-diagramm-navbar-collapse-1" class="btn btn-default diagramm-toggle">Карта сайта</button><button type="button" data-toggle="collapse" data-target="#bs-fake-navbar-collapse-1" class="btn btn-default fake-toggle">Fake</button><button type="submit" class="btn btn-success submit">Сохранить</button><div id="bs-diagramm-navbar-collapse-1" class="panel-collapse collapse"><div id="diagramm"></div></div><div id="bs-fake-navbar-collapse-1" class="panel-collapse collapse"><pre>{
+  &quot;status&quot;: &quot;ready&quot;,
+  &quot;title&quot;: &quot;Issue&quot;,
+  &quot;url&quot;: &quot;/issues/sample-issue&quot;,
+  &quot;description&quot;: &quot;This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.&quot;,
+  &quot;date&quot;: {
+    &quot;published&quot;: &quot;ср, 9 дек 2015 г., 12:56&quot;,
+    &quot;updated&quot;: &quot;ср, 9 дек 2015 г., 12:56&quot;
+  },
+  &quot;owner&quot;: {
+    &quot;_id&quot;: 987654,
+    &quot;name&quot;: &quot;Лариса Панова&quot;
+  },
+  &quot;hide&quot;: {
+    &quot;navigation&quot;: true,
+    &quot;sitemap&quot;: false
+  },
+  &quot;tags&quot;: [
+    &quot;sample&quot;,
+    &quot;template&quot;,
+    &quot;tags&quot;
+  ],
+  &quot;access&quot;: {
+    &quot;groups&quot;: [
+      {
+        &quot;_id&quot;: 0,
+        &quot;name&quot;: &quot;Admins&quot;,
+        &quot;url&quot;: &quot;/admin/groups/0&quot;
+      },
+      {
+        &quot;_id&quot;: 1,
+        &quot;name&quot;: &quot;Managers&quot;,
+        &quot;url&quot;: &quot;/admin/groups/1&quot;
+      }
+    ],
+    &quot;users&quot;: [
+      {
+        &quot;_id&quot;: 987654,
+        &quot;name&quot;: &quot;Егор Сысоев&quot;,
+        &quot;url&quot;: &quot;/admin/users/987654&quot;
+      },
+      {
+        &quot;_id&quot;: 123456,
+        &quot;name&quot;: &quot;Владимир Овчинников&quot;,
+        &quot;url&quot;: &quot;/admin/users/123456&quot;
+      }
+    ]
+  }
+}</pre></div></div></div><div class="row"><div id="main-sector" class="col-lg-7 no-padding"><div class="form-group"><div class="input-group"><span class="input-group-addon glyphicon glyphicon-pencil"></span><input type="text" name="title" id="title" value="Пример статической страницы"/></div><div class="input-group"><input type="text" name="url" id="url" value="/Пример статической страницы"/><span class="input-group-addon glyphicon glyphicon-pencil"></span></div><div class="input-group"><label class="small">Description</label><input type="text" name="meta-description" id="meta-description" value="Sample page in statics"/><span class="input-group-addon glyphicon glyphicon-pencil"></span></div><div class="input-group"><label class="small">Keys</label><input type="text" name="meta-keys" id="meta-keys" value="admin,template,brainslab,cms,sample"/><span class="input-group-addon glyphicon glyphicon-pencil"></span></div><div class="input-group"><div id="toolbar"><select title="Size" class="ql-size"><option value="10px">Small</option><option value="13px" selected="">Normal</option><option value="18px">Large</option><option value="32px">Huge</option></select><select title="Text Color" class="ql-color"><option value="rgb(255, 255, 255)">White</option><option value="rgb(0, 0, 0)" selected="">Black</option><option value="rgb(255, 0, 0)">Red</option><option value="rgb(0, 0, 255)">Blue</option><option value="rgb(0, 255, 0)">Lime</option><option value="rgb(0, 128, 128)">Teal</option><option value="rgb(255, 0, 255)">Magenta</option><option value="rgb(255, 255, 0)">Yellow</option></select><select title="Text Alignment" class="ql-align"><option value="left" selected="">Left</option><option value="center">Center</option><option value="right">Right</option><option value="justify">Justify</option></select><button title="Bold" class="ql-format-button ql-bold">Bold</button><button title="Italic" class="ql-format-button ql-italic">Italic</button><button title="Underline" class="ql-format-button ql-underline">Under</button><button title="Strikethrough" class="ql-format-button ql-strike">Strike</button><button title="Link" class="ql-format-button ql-link">Link</button><button title="Image" class="ql-format-button ql-image">Image</button><button title="Bullet" class="ql-format-button ql-bullet">Bullet</button><button title="List" class="ql-format-button ql-list">List</button></div><div id="content" rows="10" cols="80">This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</div><span class="input-group-addon glyphicon glyphicon-pencil"></span></div></div></div><div id="additional-sector" class="col-lg-5"><div class="row form-group"><div class="col-lg-6 no-padding"><div class="input-group"><label class="small">Published</label><input type="text" name="published" id="published" value="ср, 9 дек 2015 г., 12:57"/></div></div><div class="col-lg-6 no-padding"><div class="input-group"><label class="small">Updated</label><input type="text" name="updated" id="updated" value="ср, 9 дек 2015 г., 12:57"/></div></div></div><div class="row"><div class="input-group"><label class="small">Tags</label><input type="text" name="tags" id="tags" value="sample,template,tags"/><span class="input-group-addon glyphicon glyphicon-pencil"></span></div></div><div class="row"><div class="col-lg-6 no-padding"><div class="input-group"><label>Owner</label><img src="https://s3.amazonaws.com/uifaces/faces/twitter/miguelmendes/128.jpg" width="20" height="20"/><input type="text" name="owner" id="owner" value="Леонид Федотов"/></div><div class="input-group"><label>Template</label><select id="template"><option>Default</option><option>Sample</option></select></div><div class="input-group"><label>Indexation</label><input id="indexation" type="checkbox"/></div><div class="input-group"><label>Visible</label><input id="visible" type="checkbox"/></div><div class="input-group"><label>Hide from navigation</label><input id="hide-navigation" type="checkbox" value="value"/></div><div class="input-group"><label>Hide from sitemap</label><input id="hide-sitemap" type="checkbox"/></div></div><div class="col-lg-6 no-padding"><div class="input-group"><label>Access groups</label><input type="search" name="access-groups" id="access-groups" placeholder="search group"/><ul class="access-groups"></ul><li><a href="/admin/groups/0">Admins</a></li><li><a href="/admin/groups/1">Managers</a></li><span class="input-group-addon glyphicon glyphicon-pencil"></span></div><div class="input-group"><label>Access users</label><input type="search" name="access-users" id="access-users" placeholder="search user"/><ul class="access-users"></ul><li><a href="/admin/users/987654">Лука Уваров</a></li><li><a href="/admin/users/123456">Анжелика Лазарева</a></li><span class="input-group-addon glyphicon glyphicon-pencil"></span></div><button type="submit" class="btn btn-success submit">Сохранить</button></div></div></div></div></div></form></div>
